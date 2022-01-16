@@ -44,6 +44,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-htmlmin": "^5.0.1",
     "gulp-uglify": "^3.0.2",
+    "mdui": "^1.0.2",
     "purecss": "^2.0.6",
     "ts-loader": "^9.1.1"
   }

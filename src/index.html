@@ -9,14 +9,55 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>Hello, World!</title>
+    <meta name="renderer" content="webkit">
+    <title>管理系统 - 登录</title>
+    <meta name="abstract" content="机电分公司第六项目部" />
+    <meta name="keywords" content="项目部管理系统"/>
+    <meta name="copyright" content="2022 北京地铁机电分公司第六项目部 第六项目部管理系统制作工作组" />
+    <meta name="author" content="KagurazakaYashi, moeAya, moeDisk, KagurazakaYukari" />
+    <meta name="designer" content="KagurazakaYashi" />
+    <meta name="apple-mobile-web-app-title" content="管理系统">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#A48A6B"/>
+    <meta name="theme-color" content="#A48A6B" />
+    <meta name="msapplication-TileColor" content="#A48A6B"/>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="image" content="image/pd6.gif" />
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="node_modules/mdui/dist/css/mdui.min.css">
     <script src="dist/index.js"></script>
 </head>
 
-<body>
-    <div>Hello, World!</div>
-    <div>KagurazakaYashi</div>
+<body class="mdui-theme-primary-blue mdui-theme-accent-blue mdui-theme-layout-light">
+    <video id="bgvideo" width="1280" height="960" loop muted autoplay>
+        <source src="video/bgvideo.webm" type="video/webm">
+        <source src="video/bgvideo.mp4" type="video/mp4">
+    </video>
+    <header id="titleBox">
+        <img id="logo" src="" title="机电分公司第六项目部" />
+        <div id="title1"></div>
+        <div id="title2"></div>
+    </header>
+    <div id="loginBox">
+        <div class="fill" id="bgColor"></div>
+        <div id="loginBoxC">
+            <img id="userLoginImg" src="image/userlogin-b.gif" title="用户登录" />
+            <p>&emsp;</p>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <i class="mdui-icon material-icons">account_circle</i>
+                <label class="mdui-textfield-label">用户名</label>
+                <input id="username" class="mdui-textfield-input" type="text" required />
+                <div id="usernameNil" class="mdui-textfield-error">用户名不能为空。</div>
+            </div>
+            <div class="mdui-textfield mdui-textfield-floating-label">
+                <i class="mdui-icon material-icons">lock</i>
+                <label class="mdui-textfield-label">密码</label>
+                <input id="password" class="mdui-textfield-input" type="password" required />
+                <div id="passwordNil" class="mdui-textfield-error">密码不能为空。</div>
+            </div>
+            <button id="btnLogin" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent">登录&nbsp;＞</button>
+        </div>
+    </div>
+    <footer id="footer">&copy;&nbsp;</footer>
 </body>
 
 </html>
