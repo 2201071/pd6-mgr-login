@@ -13,7 +13,8 @@ export default class Login {
             if (!this.chkInput()) {
                 return;
             }
-            mdui.alert('这里应该开始登录', 'TODO'); // TODO
+            // mdui.alert('这里应该开始登录', 'TODO'); // TODO
+            window.location.href = '../pd6-mgr';
         });
     }
 
